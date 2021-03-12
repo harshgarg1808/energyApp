@@ -9,5 +9,9 @@
       "launchShowDuration": 0
     }
   },
-  "cordova": {}
+  "linuxAndroidStudioPath": "/opt/android-studio-ide-201.6953283-linux/android-studio/bin/studio.sh",
+  "cordova": {},
+  "server": {
+    "url": "http://192.168.29.254:8100"
+  }
 }

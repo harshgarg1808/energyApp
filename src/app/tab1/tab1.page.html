@@ -6,12 +6,58 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" class="ion-align-items-center">
+ 
+  <ion-row class="ion-justify-content-center h-95">
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+      <ion-slides pager="true" [options]="slideOpts">
+        
+        <ion-slide>
+            <ion-card>
+              <ion-card-header>
+                  <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+                  <ion-card-title>Card Title</ion-card-title>
+              </ion-card-header>
+              <app-circle-graph></app-circle-graph>
+              <ion-card-content>
+                Keep close to Nature's heart... and break clear away, once in awhile,
+                and climb a mountain or spend a week in the woods. Wash your spirit clean.
+              </ion-card-content>
+            </ion-card> 
+          
+        </ion-slide>
+
+        <ion-slide>
+          <ion-card>
+            <ion-card-header>
+              <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+              <ion-card-title>Card Title</ion-card-title>
+            </ion-card-header>
+            <app-circle-graph></app-circle-graph>
+
+            <ion-card-content>
+              Keep close to Nature's heart... and break clear away, once in awhile,
+              and climb a mountain or spend a week in the woods. Wash your spirit clean.
+            </ion-card-content>
+          </ion-card> 
+        </ion-slide>
+
+        <ion-slide>
+          <ion-card>
+            <ion-card-header>
+              <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+              <ion-card-title>Card Title</ion-card-title>
+            </ion-card-header>
+            <app-circle-graph></app-circle-graph>
+
+            <ion-card-content>
+              Keep close to Nature's heart... and break clear away, once in awhile,
+              and climb a mountain or spend a week in the woods. Wash your spirit clean.
+            </ion-card-content>
+          </ion-card> 
+        </ion-slide>
+      
+      </ion-slides>
+
+  </ion-row>
 </ion-content>

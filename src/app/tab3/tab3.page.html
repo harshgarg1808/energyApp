@@ -1,17 +1,49 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
-  </ion-toolbar>
+    <ion-toolbar>
+      <ion-title>
+       <ion-row>
+           <ion-col size="3">
+            <ion-icon name="person-circle-sharp" size="large"></ion-icon>
+           </ion-col>
+           <ion-col size="9" >
+            <ion-title>Harsh</ion-title>
+           </ion-col>
+       </ion-row>
+      </ion-title>
+    </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
-</ion-content>
+<ion-content fullscreen>
+    <ion-list>
+    
+      <ion-item>
+        <ion-label>
+          <h2>My Profile</h2>
+        </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">First Name</ion-label>
+        <ion-input placeholder="Harsh"></ion-input>
+      
+
+     
+        <ion-label position="stacked">Last Name</ion-label>
+        <ion-input placeholder="Garg"></ion-input>
+      
+
+     
+        <ion-label position="stacked">Mobile No.</ion-label>
+        <ion-input placeholder="+91 7303422689"></ion-input>
+      
+
+     
+        <ion-label position="stacked">Email</ion-label>
+        <ion-input placeholder="harshgarg1808@gmail.com"></ion-input>
+      </ion-item>
+
+    </ion-list>
+
+  </ion-content>
+  
