@@ -9,6 +9,7 @@ import { Tab2PageRoutingModule } from './tab2-routing.module';
 import {CircleGraphComponent} from '../components/circle-graph/circle-graph.component'
 import {BarGraphComponent} from '../components/bar-graph/bar-graph.component'
 import { NgApexchartsModule } from 'ng-apexcharts';
+import {RefresherComponent} from '../components/refresher/refresher/refresher.component'
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { NgApexchartsModule } from 'ng-apexcharts';
     Tab2PageRoutingModule,
     NgApexchartsModule
   ],
-  declarations: [Tab2Page,CircleGraphComponent ,BarGraphComponent] ,
+  // exports : [NgApexchartsModule],
+  declarations: [Tab2Page,CircleGraphComponent ,BarGraphComponent,RefresherComponent] ,
 })
 
 export class Tab2PageModule {}

@@ -27,24 +27,22 @@ export type ChartOptions = {
 export class CircleGraphComponent implements OnInit {
   @ViewChild("chart") chart: ChartComponent;
   public chartOptions: Partial<ChartOptions>;
-
+  @Input() chartData: Object;
+  
+  
   constructor() {}
 
   ngOnInit(): void {
-    
+    console.log(this.chartData)
+
     this.chartOptions = {
-      series: [75],
+      series: this.chartData['series'],
       chart: {
         height: 200,
-        width: '100%',
+        width: '90%',
         type: "radialBar",
         toolbar: {
           show: false
-        },
-        animations: {
-          enabled: true,
-          easing: 'easeinout',
-          speed: 800,
         }
       },
       plotOptions: {
@@ -74,7 +72,7 @@ export class CircleGraphComponent implements OnInit {
           dataLabels: {
             show: true,
             name: {
-              offsetY: -10,
+              offsetY: 0,
               show: true,
               color: "#888",
               fontSize: "15px"

@@ -1,63 +1,41 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
+<ion-header [translucent]="true" >
+  <ion-toolbar color="primary">
+    <ion-title class="ion-text-center">
+      <img src="../../assets/icon/logo-white.svg" class="w-17">
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" class="ion-align-items-center">
- 
-  <ion-row class="ion-justify-content-center h-95">
-
-      <ion-slides pager="true" [options]="slideOpts">
-        
-        <ion-slide>
-            <ion-card>
-              <ion-card-header>
-                  <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-                  <ion-card-title>Card Title</ion-card-title>
-              </ion-card-header>
-              <app-circle-graph></app-circle-graph>
-              <ion-card-content>
-                Keep close to Nature's heart... and break clear away, once in awhile,
-                and climb a mountain or spend a week in the woods. Wash your spirit clean.
-              </ion-card-content>
-            </ion-card> 
-          
-        </ion-slide>
-
-        <ion-slide>
-          <ion-card>
-            <ion-card-header>
-              <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-              <ion-card-title>Card Title</ion-card-title>
-            </ion-card-header>
-            <app-circle-graph></app-circle-graph>
-
-            <ion-card-content>
-              Keep close to Nature's heart... and break clear away, once in awhile,
-              and climb a mountain or spend a week in the woods. Wash your spirit clean.
-            </ion-card-content>
-          </ion-card> 
-        </ion-slide>
-
-        <ion-slide>
-          <ion-card>
-            <ion-card-header>
-              <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-              <ion-card-title>Card Title</ion-card-title>
-            </ion-card-header>
-            <app-circle-graph></app-circle-graph>
-
-            <ion-card-content>
-              Keep close to Nature's heart... and break clear away, once in awhile,
-              and climb a mountain or spend a week in the woods. Wash your spirit clean.
-            </ion-card-content>
-          </ion-card> 
-        </ion-slide>
-      
-      </ion-slides>
-
+<ion-content class="bg-color">
+  
+  <ion-row class=" p-3 ion-padding header-section">
+    <ion-row class=" body-section"><span class="heading">Have a Query?</span><span class="footer">We'll be happy to help!</span></ion-row>
   </ion-row>
+
+
+    <ion-row class="p-3">
+      <ion-col size="3" class= "ion-justify-content-center ion-align-items-center">
+        <a href="tel:8130065725"><ion-icon class="contact-icons" name="call-sharp"></ion-icon></a> 
+      </ion-col>
+
+      <ion-col size="9"> 
+        <div class="body mb-1"> <span class="callUs">Call Us<ion-badge class="badge-size ion-margin-start" color="primary" style="vertical-align: baseline;">New</ion-badge></span></div>
+        <div class=" phoneNo"> +91 7303422689 </div>
+      </ion-col>
+
+    </ion-row>
+    
+    <ion-row class="p-3">
+      <ion-col size="3" class= "ion-justify-content-center ion-align-items-center">
+        <ion-icon class="contact-icons" name="mail-open-sharp"></ion-icon>
+      </ion-col>
+
+      <ion-col size="9"> 
+        <div class=" body callUs">Email us</div>
+        <div class=" phoneNo"> harshgarg1808@gmail.com</div>
+      </ion-col>
+
+    </ion-row>
+
+
 </ion-content>

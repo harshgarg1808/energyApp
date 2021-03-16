@@ -1,18 +1,10 @@
-<ion-header [translucent]="true">
-    <ion-toolbar>
-      <ion-title>
-       <ion-row>
-           <ion-col size="3">
-            <ion-icon name="person-circle-sharp" size="large"></ion-icon>
-           </ion-col>
-           <ion-col size="9" >
-            <ion-title>Harsh</ion-title>
-           </ion-col>
-       </ion-row>
-      </ion-title>
-    </ion-toolbar>
+<ion-header [translucent]="true" >
+  <ion-toolbar color="primary">
+    <ion-title class="ion-text-center">
+      <img src="../../assets/icon/logo-white.svg" class="w-17">
+    </ion-title>
+  </ion-toolbar>
 </ion-header>
-
 
 <ion-content fullscreen>
     <ion-list>
@@ -45,5 +37,8 @@
 
     </ion-list>
 
+    <ion-row class="ion-justify-content-center ion-padding-top"> 
+      <ion-button color="primary" (click)="sharedService.sessionExpired()">Logout</ion-button>
+    </ion-row>
   </ion-content>
   

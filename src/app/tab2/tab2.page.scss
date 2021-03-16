@@ -9,7 +9,7 @@
     height: 15%;
 }
 .w-17{
-    width: 17%;
+    width: 20%;
 }
 .pb-0{
     padding-bottom: 0;
@@ -23,11 +23,20 @@
     padding-left: 5px;
 }
 
+.pr-5{
+    padding-right: 5px;
+}
 
 .device-container {
     margin-bottom: 2vh;
     border-radius: 1rem;
     box-shadow: rgba(28, 28, 28, 0.1) 0px 8px 16px;
+}
+
+.meter-container {
+    // border-radius: 1rem;
+    // width: 80%;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2),
 }
 
 // .device-container:active{
@@ -55,7 +64,7 @@
 
 .pulse {
     // margin:100px;
-    display: flex;
+    display: inline-flex;
     width: 8px;
     height: 8px;
     border-radius: 50%;

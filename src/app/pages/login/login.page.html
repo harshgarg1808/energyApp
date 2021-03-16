@@ -9,10 +9,13 @@
 <ion-content class="ion-no-padding">
   <div class="auth-wrapper">
     <div class="d-flex flex-column w-100 mb-auto mt-auto" id="login-form">
+     
+        <div class="ion-text-center sign-text margin-header">
+          <img alt="Entes" src="https://www.entes.eu/templates/images/enteslog.png">
 
-        <form name="signinForm" (submit)="login()">
-            <div class="text-center sign-text ">Sign In</div>
-
+        </div>
+          
+        <form name="signinForm" (submit)="login()" class="margin">
             <div class="formBlock">
                 <span class="forLabel">What’s your email?</span>
                 <input type="text" placeholder="Email Address" class=" normalInput " [(ngModel)]="payload['user_name']" name="uname" required>

@@ -1,4 +1,4 @@
-import { Component, OnInit,ViewChild } from '@angular/core';
+import { Component,Input, OnInit,ViewChild } from '@angular/core';
 
 import {
   ChartComponent,
@@ -31,25 +31,20 @@ export type ChartOptions = {
 export class BarGraphComponent implements OnInit {
   @ViewChild("chart") chart: ChartComponent;
   public chartOptions: Partial<ChartOptions>;
+  @Input() chartData: object;
 
   constructor() { }
 
   ngOnInit(): void {
     this.chartOptions = {
-      series: [
-        {
-          name: "Feb",
-          data: [0.7, 1.3]
-        },
-
-        {
-          name: "Mar",
-          data: [1.3, 2.0]
-        },
-      ],
+      series: this.chartData['series'],
       chart: {
         type: "bar",
-        height: 200,
+        height: 190,
+        width: '90%',
+        toolbar:{
+          show: false,
+        }
        
       },
       plotOptions: {
@@ -64,13 +59,11 @@ export class BarGraphComponent implements OnInit {
       },
       
       xaxis: {
-        categories: [
-          "Lucknow",
-          "Noida",          
-        ],
-        title: {
-          text: "Facilities"
+        type: 'category',
+        title:{
+          text: this.chartData['axisTitles'].x,
         },
+        tickAmount: this.chartData['tickAmount'],
         labels: {
           show: true,
           style: {
@@ -79,8 +72,8 @@ export class BarGraphComponent implements OnInit {
         }
       },
       yaxis: {
-        title: {
-          text: "Consumption"
+        title:{
+          text: this.chartData['axisTitles'].y
         }
       },
       legend : {
