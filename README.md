@@ -7,9 +7,9 @@ A Proof of Concept (P.O.C) for a scalable IoT-based Energy Monitoring System, bu
 ## 🚀 Features
 
 - **Energy Meter Integration**: Connected Raspberry Pi to Entes Energy Meter using the UART protocol.
-- **Data Processing**: Wrote Python scripts to extract buffer data, convert it to JSON, and communicate it to the system’s cloud database.
+- **Data Processing**: Python scripts to extract buffer data communicate it to the system’s cloud database.
 - **Real-Time Updates**: Implemented a low-latency algorithm to enable real-time data transfer using WebSockets.
-- **Mobile Application**: Independently developed a mobile app (frontend, backend, REST APIs, and UI/UX design) to display real-time KPIs.
+- **Mobile Application**: Display real-time KPIs - frontend, backend, REST APIs, and UI/UX design. 
 - **Key Metrics**: Power Consumption, Voltage, Active Power, Frequency, and more, displayed dynamically in the mobile app.
 - **Commercial Viability**: The P.O.C laid the groundwork for an in-house IoT module with minimum product viability.
 
