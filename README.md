@@ -7,7 +7,7 @@ A Proof of Concept (P.O.C) for a scalable IoT-based Energy Monitoring System, bu
 ## 📸 Screenshots
 
 ### Real-Time Monitoring
-![Real-Time Monitoring](./EMS1.png)
+![Real-Time Monitoring](./EMS3.png)
 
 ---
 
