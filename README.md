@@ -4,21 +4,7 @@ A Proof of Concept (P.O.C) for a scalable IoT-based Energy Monitoring System, bu
 
 ---
 
-## 🚀 Features
-
-- **Energy Meter Integration**: Connected Raspberry Pi to Entes Energy Meter using the UART protocol.
-- **Data Processing**: Python scripts to extract buffer data communicate it to the system’s cloud database.
-- **Real-Time Updates**: Implemented a low-latency algorithm to enable real-time data transfer using WebSockets.
-- **Mobile Application**: Display real-time KPIs - frontend, backend, REST APIs, and UI/UX design. 
-- **Key Metrics**: Power Consumption, Voltage, Active Power, Frequency, and more, displayed dynamically in the mobile app.
-- **Commercial Viability**: The P.O.C laid the groundwork for an in-house IoT module with minimum product viability.
-
----
-
 ## 📸 Screenshots
-
-### Mobile App Interface
-![Mobile App Interface](./EMS2.png)
 
 ### Real-Time Monitoring
 ![Real-Time Monitoring](./EMS1.png)
@@ -33,5 +19,16 @@ A Proof of Concept (P.O.C) for a scalable IoT-based Energy Monitoring System, bu
 - **Real-Time Communication**: WebSockets
 - **Database**: Cloud System
 - **KPIs**: Voltage, Active Power, Frequency, Power Consumption
+
+---
+
+## 🚀 Features
+
+- **Energy Meter Integration**: Connected Raspberry Pi to Entes Energy Meter using the UART protocol.
+- **Data Processing**: Python scripts to extract buffer data communicate it to the system’s cloud database.
+- **Real-Time Updates**: Implemented a low-latency algorithm to enable real-time data transfer using WebSockets.
+- **Mobile Application**: Display real-time KPIs - frontend, backend, REST APIs, and UI/UX design. 
+- **Key Metrics**: Power Consumption, Voltage, Active Power, Frequency, and more, displayed dynamically in the mobile app.
+- **Commercial Viability**: The P.O.C laid the groundwork for an in-house IoT module with minimum product viability.
 
 ---
