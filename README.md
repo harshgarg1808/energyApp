@@ -15,6 +15,16 @@ A Proof of Concept (P.O.C) for a scalable IoT-based Energy Monitoring System, bu
 
 ---
 
+## 📸 Screenshots
+
+### Mobile App Interface
+![Mobile App Interface](./EMS2.png)
+
+### Real-Time Monitoring
+![Real-Time Monitoring](./EMS1.png)
+
+---
+
 ## 🛠️ Tech Stack
 
 - **Hardware**: Raspberry Pi, Entes Energy Meter
@@ -25,11 +35,3 @@ A Proof of Concept (P.O.C) for a scalable IoT-based Energy Monitoring System, bu
 - **KPIs**: Voltage, Active Power, Frequency, Power Consumption
 
 ---
-
-## 📸 Screenshots
-
-
----
-
-
-
