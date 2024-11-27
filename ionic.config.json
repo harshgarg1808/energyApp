@@ -1,9 +1,0 @@
-{
-  "name": "EMS",
-  "integrations": {
-    "capacitor": {},
-    "cordova": {}
-  },
-  "type": "angular",
-  "id": "a93f8b79"
-}
